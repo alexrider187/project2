@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark/Light Mode Switch</title>
+  <style>
+    body {
+      transition: background-color 0.5s, color 0.5s;
+    }
+    .light-mode {
+      background-color: white;
+      color: black;
+    }
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+    .switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px;
+      cursor: pointer;
+      background-color: #ccc;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body class="light-mode">
+  <button class="switch" onclick="toggleMode()">Switch to Dark Mode</button>
+
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      const switchButton = document.querySelector('.switch');
+      if (body.classList.contains('light-mode')) {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        switchButton.textContent = 'Switch to Light Mode';
+      } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        switchButton.textContent = 'Switch to Dark Mode';
+      }
+    }
+  </script>
+</body>
+</html>

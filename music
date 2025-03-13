@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .calculator {
+      width: 320px;
+      background: #333;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .display {
+      width: 100%;
+      height: 70px;
+      font-size: 32px;
+      text-align: right;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #0f0;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-family: 'Courier New', monospace;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    button {
+      width: 100%;
+      height: 60px;
+      font-size: 22px;
+      background: #555;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: 0.3s ease-in-out;
+    }
+    button:hover {
+      background: #777;
+    }
+    .operator {
+      background: #ff9500;
+    }
+    .operator:hover {
+      background: #e68900;
+    }
+    .equal {
+      background: #34c759;
+      grid-column: span 2;
+    }
+    .equal:hover {
+      background: #26a745;
+    }
+    .clear {
+      background: #ff3b30;
+    }
+    .clear:hover {
+      background: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="Calculator">
+    <input type="text" id="display" class="display" disabled>
+    <div class="buttons">
+      <button onclick="clearDisplay()" class="clear">C</button>
+      <button onclick="deleteLast()" class="clear">&larr;</button>
+      <button onclick="appendValue('/')" class="operator">/</button>
+      <button onclick="appendValue('*')" class="operator">*</button>
+      <button onclick="appendValue('-')" class="operator">-</button>
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('+')" class="operator">+</button>
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="appendValue('.')">.</button>
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="calculateResult('=')" class="equal">=</button>
+      <button onclick="appendValue('0')" style="grid-column: span 2;">0</button>
+    </div>
+  </div>
+
+  <script>
+    const display = document.getElementById("display");
+
+    function appendValue(value){
+      display.value +=value;
+    }
+    function clearDisplay() {
+      display.value ="";
+    }
+    function deleteLast() {
+    display.value = display.value.slice(0, -1);
+}
+    function calculateResult() {
+    try {
+        if (display.value.trim() === "") {
+            display.value = "0"; // Prevent empty evaluation
+            return;
+        }
+        // Ensure only valid expressions are evaluated
+        if (/^[0-9+\-*/.]+$/.test(display.value)) {
+            display.value = eval(display.value);
+        } else {
+            display.value = "Error";
+        }
+    } catch {
+        display.value = "Error";
+    }
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <p>welcome to our website</p>
+    <h1>welcome home</h1>
+    <h2>welcome class</h2>
+    <h3>welcome to resort </h3>
+  </div>
+  <script>
+    
+    
+  </script>
+</body>
+</html>
+
+

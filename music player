@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .player {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .player button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .player button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <h2>Music Player</h2>
+    <audio id="audio" controls>
+      <source src="audio/joel_lwaga_olodumare_official_lyric_video_mp3_70196.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <br>
+    <button onclick="playAudio()">Play</button>
+    <button onclick="pauseAudio()">Pause</button>
+    <button onclick="stopAudio()">Stop</button>
+  
+    <button onclick="next()">Next</button>
+    <button onclick="prev()">Prev</button>
+  </div>
+
+  <script>
+    let audio = document.getElementById('audio');
+
+    function playAudio() {
+      audio.play();
+    }
+
+    function pauseAudio() {
+      audio.pause();
+    }
+
+    function stopAudio() {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+    function next(){
+      audio.src = "audio/Phina-Tz-Sisi-ni-wale.mp3";
+      audio.play();
+    }
+    function prev(){
+      audio.src = "audio/joel_lwaga_olodumare_official_lyric_video_mp3_70196.mp3";
+      audio.play();
+    }
+  </script>
+</body>
+</html>

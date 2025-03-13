@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImageSlider</title>
+  <style>
+    .slider {
+      display: flex;
+    }
+    .slider img {
+      width: 50%;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <img src="image/happy.jpg" alt="image 1">
+    <img src="image/dexels.jpg" alt="image 2">
+    <img src="image/smoke.jpg" alt="image 3">
+  </div>
+  <script>
+    let sliderImages = document.querySelectorAll(".slider img");
+
+    let i = 0;
+    function slider() {
+      for (let j = 0; j < sliderImages.length; j ++) {
+        sliderImages[j].style.opacity = 0;
+      }
+      sliderImages[i].style.opacity = 1;
+
+      if (i < sliderImages.length - 1) {
+        i ++;
+      } else {
+        i = 0;
+      }
+    }
+    setInterval(slider, 2000);
+  </script>
+</body>
+</html>

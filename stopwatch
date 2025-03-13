@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <style>
+    html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.stopwatch {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.stopwatch #display {
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+.stopwatch button {
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.stopwatch button {
+    margin: 20px;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.stopwatch #alt-btns {
+    background-color: green;
+}
+
+.stopwatch #reset {
+    background-color: red;
+}
+  </style>
+</head>
+<body>
+  <div class="stopwatch">
+  <div id="display">00:00:00</div>
+    <button id="alt-btns">Start</button>
+    <button id="reset">Reset</button>
+  </div>
+  <script>
+   let time = 0;
+   let interval;
+   let display = document.getElementById("display");
+   let altBtns = document.getElementById("alt-btns");
+    let resetBtn = document.getElementById("reset");
+
+//Start button click
+    function startTimer() {
+    altBtns.innerHTML = "Stop"
+    if(interval){
+      clearInterval(interval);
+    }
+    interval = setInterval(() => { 
+      time += 1
+      display.innerHTML = 
+        Math.floor(time / 3600).toString().padStart(2, "0") + ":" + Math.floor((time % 3600) / 60).toString().padStart(2, "0") + ":" + Math.floor((time % 60)).toString().padStart(2, "0")
+    }, 1000);
+}
+
+function stopTimer() {
+  altBtns.innerHTML = "Start"
+  clearInterval(interval);
+  interval = null;
+}
+
+altBtns.onclick = function(){
+  if(interval){
+    stopTimer();
+  } else {
+    startTimer();
+  }
+}
+
+resetBtn.onclick = function(){
+  altBtns.innerHTML = "Start"
+  if(interval){
+    clearInterval(interval);
+  }
+  interval = null;
+  time = 0;
+  display.innerHTML = "00:00:00";
+}
+  </script>
+</body>
+</html>
