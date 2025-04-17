@@ -9,25 +9,28 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      
     }
     .container {
       width: 80%;
       margin: auto;
       overflow: hidden;
+      border-radius: 8px;
+      border-color: black;
+      background-color: #09b7ec;
+       
     }
     header {
-      background: #333;
-      color: #fff;
-      padding-top: 30px;
-      min-height: 70px;
+      background: #09b7ec;
+      color: #85f108;
+      min-height: 50px;
       border-bottom: #77aaff 3px solid;
     }
     header a {
-      color: #fff;
-      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
       text-transform: uppercase;
-      font-size: 16px;
+      font-size: 13px;
     }
     header ul {
       padding: 0;
@@ -68,12 +71,18 @@
       margin-right: 10px;
     }
     .product .buttons .cart-btn {
-      background: #77aaff;
-      color: #fff;
+      background: #114db6;
+      color: #d3c60d;
+      font-style: italic;
+      border-radius: 8px;
+      font-weight: bold;
     }
     .product .buttons .buy-btn {
-      background: #28a745;
-      color: #fff;
+      background: #0ae63d;
+      color: #000000;
+      font-style: italic;
+      border-radius: 8px;
+      font-weight: bold;
     }
     .product .buttons button:hover {
       opacity: 0.8;
@@ -86,7 +95,11 @@
       padding: 0;
     }
     .reviews p {
-      color: #666;
+      color: #000000;
+    }
+    p{
+      font-size: 15px;
+      color: #000000;
     }
   </style>
 </head>
@@ -124,7 +137,7 @@
       alert('Added to cart!');
     });
     document.querySelector('.buy-btn').addEventListener('click', function() {
-      alert('Proceeding to buy!');
+      alert('Item successfuly purchased will contact you shortly!');
     });
   </script>
 </body>

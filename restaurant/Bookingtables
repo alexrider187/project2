@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Booking</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .signin-container {
+    background-image: url(top-view-table-full-food.jpg);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  .signin-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 10px;
+    width: 250px;
+    outline-color: #921010;
+    
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-style: oblique;
+    color: #17fd0f;
+    font-weight: bold;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline-color: #17fd0f;
+  }
+  .signin-btn {
+    width: 70%;
+    padding: 10px;
+    background-color: #0cf8ec;
+    color: #bf0feb;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 30px;
+  }
+  .signin-btn:hover {
+    background-color: #17fd0f;
+  }
+  .back{
+    margin-left:0px;
+    color:#fff;
+    cursor: pointer;
+  }
+  .back:hover{
+    color: #fff;
+  }
+  .forgot{
+    margin-left:60px;
+    margin-top:4px;
+    cursor: pointer;
+  }
+ 
+  h2{
+   color:rgb(255, 196, 33);
+   font-weight: bold;
+   
+  }
+  h5{
+   color:blue;
+   font-size: 17px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-left: 60px;
+   font-style: italic;
+  
+  }
+</style>
+<body>
+  <div class="signin-container">
+    <div class="back"><a href="http://127.0.0.1:3000/restaurant/garden">&LeftArrow;Back</a></div>
+     <h2>Online Reservation</h2>
+     <h5>We offer Top Notch</h5>
+     <form id="signinForm" action="https://formsubmit.co/brivamasungo@gmail.com" method="POST">
+       <div class="form-group">
+         <label for="name">Name:</label>
+         <input type="text" id="name" placeholder="Name" required>
+       </div>
+       <div class="form-group">
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="Email" placeholder="e.g Achillesbright@gmail.com" required>
+       </div>
+       <div class="form-group">
+         <label for="phone">Phone No:</label>
+         <input type="tel" id="phone" name="Phone" placeholder="+254" required>
+       </div>
+       <div class="form-group">
+        <label for="phone">No. of guests:</label>
+        <input type="tel" id="phone" name="guests" placeholder="Enter" required>
+      </div>
+       
+      <div class="form-group">
+        <label for="phone">Text us:</label>
+        <textarea placeholder="Message" name = "Message" required></textarea>
+      </div>
+       <button type="button" class="signin-btn" onclick="handleSignIn()">Book Table</button>
+     </form>
+  
+ 
+   </div>
+</body>
+</html>

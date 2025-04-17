@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portifolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="portifolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="glass">
+    <nav>
+      <div class="logo">
+        <h2 class="neon-text">Dickson</h2>
+      </div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1 class="neon-text">Hi, I'm Dickson</h1>
+      <p>Frontend Developer | UI/UX Designer</p>
+      <a href="Hire me" class="neon-btn">Hire me</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="image/image.png" alt="hero image">
+    </div>
+  </section>
+    <section id="about" class="about glass">
+      <h2 class="neon-text">About Me</h2>
+      <div class="about-content">
+        <p>I'm a passionate Frontend Developer with experience in building responsives and user-friendly websites, I specialize in JavaScriipt, React.js, and UI/UX design.</p>
+      </div>
+      <div class="skills">
+        <h2>Skills</h2>
+        <i class="fab fa-html5"></i>
+        <h2>HTML</h2>
+        <i class="fab fa-css3"></i>
+        <h2>CSS</h2>
+        <i class="fab fa-js"></i>
+        <h2>JavaScript</h2>
+        <i class="fab fa-react"></i>
+        <h2>React.js</h2>
+        <i class="fab fa-figma"></i>
+        <h2>Figma</h2>
+      </div>
+        <a href="Contact Me" class="neon-btn">Contact Me</a>
+    </section>
+    <section id="projects" class="projects glass">
+      <h2 class="neon-text">My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="image/ipp.avif" alt="project 1">
+          <h3>Holi Fluid Animation</h3>
+          <p>A modern responsive Holi fluid Animation built with HTML,CSS, and JavaScript.</p>
+          <a href="https://github.com/alexrider187/project2.git" target="_blank" class="neon-btn">Source Code</a>
+        </div>
+        <div class="project">
+          <img src="image/calc.avif" alt="project 2">
+          <h3>Calculator</h3>
+          <p>A modern responsive Calculator built with HTML,CSS, and JavaScript.</p>
+          <a href="https://github.com/alexrider187/project2.git" target="_blank" class="neon-btn">Source Code</a>
+        </div>
+        <div class="project">
+          <img src="image/pl.avif" alt="project 3">
+          <h3>Music Player</h3>
+          <p>A modern responsive Music Player built with HTML,CSS, and JavaScript.</p>
+          <a href="https://github.com/alexrider187/project2.git" target="_blank" class="neon-btn">Source Code</a>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services glass">
+      <h2 class="neon-text">Services</h2>
+      <div class="service-grid">
+        <div class="service">
+          <i class="fas fa-paint-brush"></i>
+          <h3>UI/UX Design</h3>
+          <p>I design modern and responsive user interfaces for websites and mobile applications.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Frontend Development</h3>
+          <p>I build responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Mobile Development</h3>
+          <p>I build responsive and user-friendly mobile applications using React Native.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact glass">
+      <h2 class="neon-text">Contact Me</h2>
+      <form action="https://formsubmit.co/dicksonngari71@gmail.com" method="POST">
+        <input type="text" name="Name" placeholder="Name"  required>
+        <input type="email" name="Email"  placeholder="Email" required>
+        <textarea placeholder="Message" name="message"  required></textarea>
+        <button type="submit" class="neon-btn">Send Message</button>
+      </form>
+    </section>
+      <footer class="glass">
+        <p>&copy; 2025 Dickson. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+</head>
+<style>
+  body{
+    background-color:black;
+
+  }
+  .cover{
+    background-image: url(top-view-table-full-food.jpg);
+    height: 1000px;
+    position: relative;
+    background-size: cover;
+      cursor: pointer;
+    
+  }
+ 
+  .overlay{
+    background-color:rgba(0,0,0,0.5);
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  .btn{
+    border-radius: 10px;
+    margin-left:480px;
+    margin-top:20px;
+    display:inline-block;
+    
+  }
+  .btn{
+    margin-left:200px;
+    margin-top:20px;
+    display:inline-block;
+    
+  }
+  .Explore{
+    background-color: rgb(250, 103, 5);
+    border-radius: 5px;
+   height: 29px;
+   font-weight: bolder;
+   font-style: italic;
+   border-color:rgb(243, 160, 6);
+   margin-bottom: 80px;
+
+  }
+  .continue{
+    background-color: black;
+    border-radius: 10px;
+    
+  }
+  h1{
+    margin-bottom: 10px;
+  }
+  p{
+    margin:0px; 
+  }
+  .text1{
+    margin-bottom:50px;
+  }
+  .text2{
+    font-size:12px;
+    color: greenyellow;
+    text-align: center;
+   
+  
+ 
+  }
+  h3{
+    color:blue;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 0px;
+    margin-bottom: 3px;
+  }
+ 
+  #sidebar {
+      width: 250px;
+      height: 100vh;
+      background:rgba(0,0,0,0.5);
+      color: rgb(201, 198, 12);
+      position:fixed;
+      left: -250px;
+      transition: left 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      background-color:rgba(0,0,0,0.5);
+      display:inline-block;
+  }
+  #sidebar h2 {
+      margin: 0;
+      padding: 0 0 20px 0;
+    }
+    #sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #sidebar ul li {
+      margin: 15px 0;
+      position: relative;
+    }
+    #sidebar ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .submenu {
+      display: none;
+      padding-left: 20px;
+    }
+    #sidebar ul li:hover .submenu {
+      display: block;
+    }
+    #sidebar ul li a:hover {
+      background-color: #232324;
+      padding: 10px;
+    }
+    #sidebar.active {
+      left: 0;
+      opacity: 1;
+    }
+    .main-content {
+      margin-left: 0;
+      padding: 0px;
+      flex-grow: 1;
+      transition: margin-left 0.3s ease;
+
+    }
+    #toggle-btn {
+      background-color: #333;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      margin-bottom: 40px;
+    }
+    h1, p {
+      text-align: center;
+      font-size: 2rem;
+    }
+    #close-btn {
+      background: none;
+      border-color: bisque;
+      color:white;
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+</style>
+<body>
+
+  <div class="cover">
+    <div class="Sidebar" id="sidebar" role="navigation" aria-label="Sidebar Menu">
+      <button class="close-btn" id="close-btn" aria-label="Close Sidebar">&times;</button>
+      <h2>Sidebar Menu</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+          <ul class="submenu">
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">SEO</a></li>
+          </ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <button class="toggle-btn" id="toggle-btn" aria-label="Open Sidebar">&#9776;</button>
+      </div>
+    <div class="overlay">
+     <h1>Welcome to Queens Garden Hotel</h1>
+     <p class="text1">We are the Top Notch</p>
+<br>
+<div class="content">
+  <p class="text2">Enjoy your Healthy Delicious Meals.</p>
+  <h3>Treat Yourself</h3>
+  <p class="text2">Lets Celebrate together as one family.Here is where all your desire is fulfilled ,alltaditional foods,drinks and deserts.We bring you a carefully curated Menu inspired by fresh,Locally sourced ingredients.Whether we are enjoying us for a cozy dinner,or casual bite,our team is hereto make your experience deliciously memorable. </p>
+
+</div>
+<div class="btn">
+  <button class="Explore">
+  <a href="http://127.0.0.1:3000/restaurant/Menu">Explore More</a>
+</button>
+</div>
+<div class="btn">
+  <button class="continue">
+  <a href="http://127.0.0.1:3000/restaurant/garden">Continue&RightArrow;</a>
+</button>
+</div>
+    <h6>Dine in |Take out |Catering</h6>
+    <h6>#Come hungry.Leave happy.</h6>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById("toggle-btn");
+    const closeBtn = document.getElementById("close-btn");
+    const sidebar = document.getElementById("sidebar");
+
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+      if(sidebar.classList.contains("active")) {
+        toggleBtn.innerHTML = "&times;"; // Change to close Icon
+        toggleBtn.setAttribute("aria-label", "Close Sidebar");// Update aria-label
+      } else {
+        toggleBtn.innerHTML = "&#9776; Open Sidebar";// Change to open icon
+        toggleBtn.setAttribute("arial-label", "Open Sidebar");// update arial-labael
+      }
+    });
+    closeBtn.addEventListener("click",() => {
+      sidebar.classList.remove("active");
+      toggleBtn.innerHTML = "&#9776;";// Reset button text
+      toggleBtn.setAttribute("arial-label")
+
+    });
+  </script>
+
+</body>
+</html>

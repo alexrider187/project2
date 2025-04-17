@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awsome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+   .menu{
+      display: flex;
+      background-color: rgb(20, 211, 211);
+      border-radius: 8px;
+      width: 468px;
+   }
+   body{
+      background:linear-gradient(rgb(255, 12, 162),rgb(8, 134, 238)) ;
+
+    }
+    .nav{
+      margin-left: 0px;
+    }
+    h1{
+      color: rgb(251, 255, 2);
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      opacity:1 ;
+    }
+    h5{
+      font-feature-settings: "blwf";
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: italic;
+      color: rgb(3, 212, 114);
+    }
+    .contact{
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100px;
+      height: 35px;
+      font-size: 13px;
+      font-weight: bold;
+      font-style: italic;
+      color: rgb(10, 247, 10);
+      background-color: rgb(7, 235, 243);
+      border-color: rgb(7, 235, 243);
+      margin-left: 10px;
+
+
+    }
+    .signin{
+      margin-left: 30px;
+      height: 35px;
+      width: 80px;
+      margin-top: 0px;
+      font-size: medium;
+      font-weight: bold;
+      font-style: italic;
+      background-color: rgb(27, 255, 6);
+      border-color: rgb(3, 245, 253);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .signin:hover{
+     color:rgb(253, 253, 253)
+      
+    }
+    .form{
+      display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     max-width: 600px;
+    }
+    .text1{
+     
+    }
+  .food1{
+    
+    width: 100px;
+      display: inline-block;
+      height: 100px;
+
+  }
+    .f1{
+      width: 100px;
+      display: inline-block;
+      margin-left: 7px;
+      height: 100px;
+      border-radius: 50%;
+     margin-right: 5px;
+
+    }
+   
+    .bookbtn{
+      font-weight: bold;
+      font-style: italic;
+      background-color: rgb(255, 218, 6);
+      border-color: rgb(255, 218, 6);
+      border-radius: 8px;
+      cursor: pointer
+    }
+    .dinning1{
+      display: inline-block;
+      width: 200px;
+      
+    }
+    .dinning{
+      display: inline-block;
+      
+    }
+    .d1{
+      width: 200px;
+      display: inline-block;
+      margin-right: 0px;
+      height: 200px;
+    }
+    .star{
+      display: inline-block;
+      cursor: pointer;
+      color: rgb(255, 230, 0);
+      font-weight: bolder;
+      
+    }
+    .contactus{
+      
+      background-image:url(reisetopia-aI6Su7Mu9Ro-unsplash.jpg);
+      Width:350px;
+      background-color:rgba(0,0,0.5);
+      border-radius:10px;
+      background-size:cover;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-left:150px;
+
+    }
+    .aboutus{
+      text-align: center;
+      background-image:url(ruslan-keba-TTuRieJW2YI-unsplash.jpg);
+      Width:350px;
+      border-radius:10px;
+      background-size:cover;
+      box-shadow: 0 4px 6px rgba(0, 0, 0.8, 0.8);
+      margin-left:150px;
+      background-color:rgba(0,0,0.5);
+    }
+    .t1{ 
+      
+      font-weight: bold;
+      font-style: italic;
+      color: gold ;
+      margin-left: 10px;
+    }
+    .t2{
+      margin-left: 10px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: rgb(0, 255, 98);
+    }
+    .socialtx{
+      margin-left: 10px;
+      font-size: 12px;
+      color: #fff;
+    }
+    h3{
+      color: brown;
+      margin-left: 70px;
+      font-size: larger;
+      font:16px;
+    }
+    .cont1{
+      background-image: url(food/keith-misner-h0Vxgz5tyXA-unsplash.jpg);
+      background-size: cover;
+      border-radius: 10px;
+    }
+    .viewall{
+      color: chartreuse;
+      background-color: aqua;
+      width: 80px;
+      margin-bottom:10px;
+      margin-top:10px;
+
+    }
+    .slider{
+      animation: 10s infinite;
+      animation-name:slider;
+      animation-delay: 0.1s infinite;
+      cursor: pointer;
+      display: flex;
+      
+
+    }
+    @keyframes slider{
+      0% {transform :translateX(0%);}
+      25%{transform :translateX(0%)}
+      50%{transform :translateX(0%);}
+      75%{transform :translateX(-50%)}
+      100%{transform :translateX(0);}
+    }
+</style>
+<body>
+  <header>
+    <h1>Welcome To Queen's Garden Restaurant.</h1>
+    <nav class="nav">
+      <div>
+      <ul class="menu">
+      <ul> <a href="http://127.0.0.1:3000/restaurant/gardencover ">Home</a></ul>
+      <ul> <a href="">Service</a></ul>
+      <ul> <a href="#aboutus">About</a></ul>
+      <button  class="signin"><a href="http://127.0.0.1:3000/restaurant/queensignin">Sign in</a></button>
+      <button  class="contact"><a href="">&phone; Contact us</a></button>
+    </div>
+      </ul>
+    </nav>
+  </header>
+  <h2 class="text1">  Welcome back to where Delight and Tasteye meal is served</h2>
+  <div class="cont1">
+    <p>Welcome to the best dining experieence</p>
+    <h5>#Dishes :</h5>
+    <div class="slider">
+    <div class="food1">
+    <img class="f1" src="top-view-table-full-food (1).jpg" alt="">
+    </div>
+    <div class="food1">
+      <img class="f1" src="top-view-table-full-food.jpg" alt="">
+      </div>
+      <div class="food1">
+        <img class="f1" src="food/istockphoto-1988702726-1024x1024.jpg" alt="">
+        </div>
+        <div class="food1">
+          <img class="f1" src="food/victoria-shes-UC0HZdUitWY-unsplash.jpg" alt="">
+          </div>
+          <div class="food1">
+            <img class="f1" src="food/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="">
+            </div>
+            <div class="food1">
+              <img class="f1" src="food/keesha-s-kitchen-sJAHun5GHMo-unsplash.jpg" alt="">
+              </div>
+              <div class="food1">
+                <img class="f1" src="food/istockphoto-2176917166-1024x1024.jpg" alt="">
+                </div>
+                <div class="food1">
+                  <img class="f1" src="food/istockphoto-1988702726-1024x1024.jpg" alt="">
+                  </div>
+                  <div class="food1">
+                    <img class="f1" src="food/istockphoto-1451031799-1024x1024.jpg" alt="">
+                    </div>
+                    <div class="food1">
+                      <img class="f1" src="food/istockphoto-1411574299-1024x1024.jpg" alt="">
+                      </div>
+              </div>
+        <div class="viewall">
+          <a href="http://127.0.0.1:3000/restaurant/Menu">&RightArrow;View all</a>
+        </div>
+        
+        <div>
+        <button  class="bookbtn"><a href="http://127.0.0.1:3000/restaurant/Bookingtables">Book Your Table</a></button>
+        </div>
+      </div>
+      <div class="dinning">
+        <h5>#Dinnings:</h5>
+        <p>Here are some of the spaceous and comfortable amenities available ,where services are offered 24/7.</p>
+        <div class="dinning1">
+          <img class="d1" src="praveen-thirumurugan-nx05CDCrfzM-unsplash.jpg" alt="">
+          <i class="star">   &star;&star;&star;&star;&star;</i>
+          </div>
+          <div class="dinning1">
+            <img class="d1" src="ruslan-keba-TTuRieJW2YI-unsplash.jpg" alt="">
+            <i class="star">    &star;&star;&star;&star;&star;</i>
+          </div>
+          <div class="viewall">
+            <a href="">&RightArrow;View all</a>
+          </div>
+          <button  class="bookbtn"><a href="http://127.0.0.1:3000/restaurant/Bookingrooms">Book Room</a></button>
+          </div> <div class="aboutus">
+            <h3>About Us</h3>
+            
+              <div class="t1">Restaurant History</div>
+              <p class="t2">As Queen's Garden We handle every individual equally.Our goal is to provide equity and comfortabilty to our customers.@since 2012.</p>
+              
+              <div class="t1">Staffs</div>
+             <p class="t2">Our staff members are very able to assist you where needed.Always reach out for assistance and this act  helps us to grow in different areas</p>
+             
+             <div class="t1">Recognition</div>
+             <p class="t2">We are nation wide thus no need for suspiction we are a trusted organisation.</p>
+             <div>
+             
+            </div>
+            </div>
+
+    <div class="contactus">
+  <h3>Contact Us</h3>
+  
+    <div class="t1">Booking Request</div>
+    <p class="t2">+254-712-439-730</p>
+    
+    <div class="t1">Location</div>
+   <p class="t2"> Queens Garden Restaurant,Eldoret city</p>
+   
+   <div class="t1">Operation</div>
+   <p class="t2">Our servicer run 24/7.All are welcomed</p>
+   <div>
+    <h5 class="socialtx">Or contact us through our social media pages:</h5>
+  </div>
+  <div class="social icons">
+    <a href="https://ww.facebook.com" target="_blank">
+     <i class="fab fa-facebook-f"> </i></a>
+     <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+     <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+     <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+     </div>
+  </div>
+ 
+
+  <footer>
+  
+   
+  </div>
+    <p>&copy; 2025 Our Restaurant. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

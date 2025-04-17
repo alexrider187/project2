@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loader</title>
+</head>
+<body >
+  <div class="loader"></div>
+  <div class="dot1">.....</div>
+  <style>
+    body{
+      background-color: antiquewhite;
+    }
+    .loader{
+     border: 7px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 7px solid rgb(17, 148, 209);
+    width: 50px;
+    height: 50px;
+    animation: spin 0.5s linear infinite;
+    display: inline-block;
+    margin-right: 20px;
+    }
+    @keyframes spin{
+      0%{transform: rotate(0deg);}
+      100%{transform: rotate(360deg);}
+      
+    }
+    .dot1{
+      display: inline-block;
+    font-size: 30px;
+    animation:bouncing 1s linear infinite;
+
+    }
+    @keyframes bouncing{
+      0%,50%{transform:translateY(20%)}
+      40%{transform: translateY(-30%);}
+      60%{transform: translateX(15%);}
+    }
+  </style>
+  
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wear collection</title>
+  <style>
+    body{
+      background:linear-gradient(rgb(255, 12, 162),rgb(8, 134, 238)) ;
+
+    }
+    .display{
+      display: flex;
+      width: 100px;
+      height:150px;
+      animation: 10s infinite;
+      animation-name: slider;
+      animation-delay: 0.1s infinite;
+      cursor: pointer;
+
+    }
+    @keyframes slider{
+      0% {transform :translateX(0%);}
+      25%{transform :translateX(0%)}
+      50%{transform :translateX(0%);}
+      75%{transform :translateX(-600%)}
+      100%{transform :translateX(0);}
+    }
+    h1{
+      font-size: 25px;
+    }
+    .menu{
+      display: flex;
+      background-color: rgb(20, 211, 211);
+      border-radius: 8px;
+      width: 550px;
+
+    }
+    .signin{
+      margin-left: 120px;
+      height: 30px;
+      width: 70px;
+      margin-top: 10px;
+      font-size: medium;
+      font-weight: bold;
+      font-style: italic;
+      background-color: rgb(27, 255, 6);
+      border-color: chartreuse;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    
+    
+    .logo1{
+      height: 50px;
+      width: 50px;
+      border-radius: 80px;
+      display: inline-block;
+      vertical-align:bottom;
+      margin-top: 0px;
+    }
+    .signin:hover{
+     color:rgb(253, 253, 253)
+
+    }
+    .description{
+      
+      color: rgb(0, 255, 0);
+    }
+    .product1{
+      width: 150px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .s1{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+      
+    }
+    .star{
+      cursor: pointer;
+      color: rgb(255, 230, 0);
+      font-weight: bolder;
+      display: inline-block;
+      
+      
+    }
+    
+    
+    .searchbox{
+      background-color: rgb(214, 205, 193);
+      border-color: antiquewhite;
+      color: solid;
+      height: 20px;
+      font-size: medium;
+      border-radius: 5px;
+      display: block;
+      outline-color: rgb(255, 0, 128);
+    }
+  </style>
+</head>
+<body>
+  <span class="menu">
+  <ul> <a href="">Home</a></ul>
+  <ul> <a href="">Contact</a></ul>
+  <ul> <a href="">Service</a></ul>
+  <ul> <a href="">About</a></ul>
+  <button  class="signin"><a href="http://127.0.0.1:3000/loginprimewear">Sign in</a></button>
+  </span>
+<h1><img class="logo1"src="wear collectioon/logo.jpg" alt="" >  Welcome to prime wear collection.</h1>
+  <p>Welcome to prime wear collection,we are here to offer you with original designs.For both:Genders and age</p>
+  <h2>Latest shoes available:</h2>
+  <div class="display">
+    <img src="wear collectioon/20240807_232238.jpg" alt="">
+    <img src="wear collectioon/IMG-20250317-WA0007.jpg" alt="">
+    <img src="wear collectioon/IMG-20250317-WA0011.jpg" alt="original nike">
+    <img src="wear collectioon/IMG-20250317-WA0025.jpg" alt="">
+    <img src="wear collectioon/IMG-20250318-WA0026.jpg" alt="">
+    <img src="wear collectioon/IMG-20250318-WA0035.jpg" alt="">
+    <img src="wear collectioon/IMG-20250318-WA0041.jpg" alt="original vans">
+    <img src="wear collectioon/Screenshot_20241110-110326_WhatsApp.jpg" alt="">
+    <img src="wear collectioon/IMG-20250318-WA0038.jpg" alt="">
+    <img src="wear collectioon/IMG-20250318-WA0035.jpg" alt="">
+  </div>
+  <P>For you:</P>
+  <input class="searchbox" type="text" placeholder="search">
+
+  <br><br>
+ 
+  <div class="product1">
+  <img class="s1"src="wear collectioon/IMG-20250318-WA0038.jpg" alt="Botbuy women slides"> 
+  <p class="description">Botbuy women slides</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 900/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/IMG-20250318-WA0020.jpg" alt="white Nike sport shoes"> 
+  <p class="description">White Nike sport shoes</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 2500/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/IMG-20250317-WA0016.jpg" alt="jordan 11 black"> 
+  <p class="description">jordan 11 black</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 4500/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/IMG-20250317-WA0006.jpg" alt="jordan 11 black"> 
+  <p class="description">jordan 11 black</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 1500/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/20240807_232853.jpg" alt="Dior"> 
+  <p class="description">grey dior for men</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 3500/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/lv.jpg" alt="Louis vuitton grey"> 
+  <p class="description">Louis vuitton grey</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 3500/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/lv (2).jpg" alt="Louis vuitton orange"> 
+  <p class="description">Louis vuitton orange</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 3500/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/bags.jpg" alt="Leather bag"> 
+  <p class="description">Leather bag</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh.4000/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/fendi shooes brown.jpg" alt="Fendi leather shoes"> 
+  <p class="description">Fendi leather shoes</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 5000/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/IMG-20250318-WA0040.jpg" alt="vans black"> 
+  <p class="description">vans black</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 2300/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/IMG-20250318-WA0030.jpg" alt="sport shoes black"> 
+  <p class="description">sport shoes black</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 1750/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/IMG-20250318-WA0025.jpg" alt="Nike air force 1"> 
+  <p class="description">Nike air force 1</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 2000/=</p>
+</div>
+<div class="product1">
+  <img class="s1"src="wear collectioon/20240807_232853.jpg" alt="Dior"> 
+  <p class="description">grey dior for men</p>
+  <i class="star">&star;&star;&star;&star;&star;</i>
+  <p class="description">ksh. 3500/=</p>
+</div>
+<p>&copy;2025.All right reservsed.</p>
+<script>
+document.querySelector(".signin").addEventListener("click",function() {alert("Ready to sign in ? ");
+});
+document.querySelector(".star").addEventListener("click",function() {alert("Rating =4/5");
+});
+
+
+</script>
+</body>
+</html>
+

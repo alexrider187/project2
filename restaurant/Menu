@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MENU</title>
+</head>
+<style>
+  body{
+    background-image: url(food/keith-misner-h0Vxgz5tyXA-unsplash.jpg);
+    background-size: cover;
+  }
+  .container{
+
+  }
+  .food{
+   display: inline-block;
+   margin-right: 10px;
+  }
+  .img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 5px;
+    
+  }
+  p{
+    width: 150px;
+    color: rgb(6, 176, 243);
+  }
+  .header{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    height: 100px;
+    color: brown;
+    margin-top: 0px;
+  }
+  .searchbox{
+      background-color: rgb(209, 209, 209);
+      border-color: antiquewhite;
+      color: solid;
+      height: 20px;
+      font-size: medium;
+      border-radius: 5px;
+      display: block;
+      outline-color: rgb(0, 204, 255);
+      margin-bottom:5px;
+      margin-top:5px;
+  }
+</style>
+<body>
+  <div class="header">
+    <h1>Here are some of our delicious menus from our able chefs</h1>
+  </div>
+  <input class="searchbox" type="text" placeholder="search">
+
+  <div class="container">
+    <div class="food">
+      <img class="img" src="food/istockphoto-1451031799-1024x1024.jpg" alt="">
+    <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/istockphoto-95617180-1024x1024.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/istockphoto-456014599-1024x1024.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/istockphoto-882186476-1024x1024.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/istockphoto-1411574299-1024x1024.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/istockphoto-1434527589-1024x1024.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/istockphoto-1440695422-1024x1024.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/istockphoto-1988702726-1024x1024.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/istockphoto-2176901761-1024x1024.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/istockphoto-2176917166-1024x1024.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/victoria-shes-UC0HZdUitWY-unsplash.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+    <div class="food">
+      <img class="img" src="food/chad-montano-eeqbbemH9-c-unsplash.jpg" alt="">
+      <p>Marinated meat,Nodules and stew</p>
+      <h5>kshs.1500 </h5>
+    </div>
+
+
+
+
+</div>
+  </body>
+</html>
